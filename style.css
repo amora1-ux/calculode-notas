@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #e83e8c;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del cuadro "Notas del estudiante" */
+.card-notas {
+    border: 3px solid #00a896;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+.card-notas h2 {
+    color: #00a896;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00a896;
+    padding-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    color: #e83e8c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 60%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #00a896;
+}
+
+/* Sección de botones y resultados */
+.action-section {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+button {
+    padding: 12px;
+    border: 2px solid #00a896;
+    background-color: transparent;
+    color: #00a896;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #00a896;
+    color: white;
+}
+
+.resultado-box {
+    border: 2px solid #6c5ce7;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fe;
+}
+
+.resultado-box h3 {
+    color: #6c5ce7;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.resultado-box p {
+    font-weight: bold;
+    color: #333;
+}
+
+#promedioFinal {
+    font-size: 18px;
+    color: #2d3436;
+}
+
+.estado {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.aprobado {
+    color: #27ae60;
+}
+
+.reprobado {
+    color: #e74c3c;
+}

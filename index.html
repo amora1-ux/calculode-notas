@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Promedio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado del Boceto -->
+        <h1>Calculadora de Promedio</h1>
+        <p class="subtitle">Ingresa tus notas y conoce tu promedio final</p>
+
+        <!-- Cuadro Principal de Notas -->
+        <div class="card-notas">
+            <h2>Notas del estudiante</h2>
+            
+            <div class="input-group">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" id="nota1" step="0.1" min="0" max="5" placeholder="Ej: 4.5">
+            </div>
+
+            <div class="input-group">
+                <label for="nota2">Nota 2:</label>
+                <input type="number" id="nota2" step="0.1" min="0" max="5" placeholder="Ej: 3.8">
+            </div>
+
+            <div class="input-group">
+                <label for="nota3">Nota 3:</label>
+                <input type="number" id="nota3" step="0.1" min="0" max="5" placeholder="Ej: 4.2">
+            </div>
+
+            <div class="input-group">
+                <label for="nota4">Nota 4:</label>
+                <input type="number" id="nota4" step="0.1" min="0" max="5" placeholder="Ej: 5.0">
+            </div>
+
+            <div class="input-group">
+                <label for="nota5">Nota 5:</label>
+                <input type="number" id="nota5" step="0.1" min="0" max="5" placeholder="Ej: 4.0">
+            </div>
+        </div>
+
+        <!-- Botones y Cuadro de Resultado -->
+        <div class="action-section">
+            <div class="buttons-group">
+                <button id="btnCalcular" onclick="calcularPromedio()">Calcular Promedio</button>
+                <button id="btnLimpiar" onclick="limpiarNotas()">Limpiar Notas</button>
+            </div>
+
+            <div class="resultado-box">
+                <h3>Resultado</h3>
+                <p>Promedio: <span id="promedioFinal">--</span></p>
+                <p id="estadoEstudiante" class="estado"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
